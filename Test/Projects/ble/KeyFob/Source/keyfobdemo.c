@@ -79,6 +79,8 @@
 #include "accelerometer.h"
 #include "simplekeys.h"
 
+#include "keycounter.h"
+
 #include "keyfobdemo.h"
 
 /*********************************************************************
@@ -88,6 +90,8 @@
 /*********************************************************************
  * CONSTANTS
  */
+#define KEY_COUNTER_PERIOD                    4000
+
 
 // Delay between power-up and starting advertising (in ms)
 #define STARTDELAY                            500
@@ -242,6 +246,12 @@ static uint8 buzzer_beep_count = 0;
 // Accelerometer Profile Parameters
 static uint8 accelEnabler = FALSE;
 
+// GAP connection handle
+static uint16 gapConnHandle;
+
+// Heart rate measurement value stored in this structure
+static attHandleValueNoti_t keyCounterMeas;
+
 /*********************************************************************
  * LOCAL FUNCTIONS
  */
@@ -253,6 +263,9 @@ static void peripheralStateNotificationCB( gaprole_States_t newState );
 static void proximityAttrCB( uint8 attrParamID );
 static void accelEnablerChangeCB( void );
 static void accelRead( void );
+
+static void keyCounterPeriodicTask( void );
+static void keyCounterCB(uint8 event);
 
 /*********************************************************************
  * PROFILE CALLBACKS
@@ -364,8 +377,13 @@ void KeyFobApp_Init( uint8 task_id )
   Batt_AddService( );     // Battery Service
   Accel_AddService( GATT_ALL_SERVICES );      // Accelerometer Profile
   SK_AddService( GATT_ALL_SERVICES );         // Simple Keys Profile
+  
+  KC_AddService( GATT_ALL_SERVICES );         // Key Counter Profile
 
   keyfobProximityState = KEYFOB_PROXSTATE_INITIALIZED;
+  
+  // Register for Heart Rate service callback
+  KeyCounter_Register( keyCounterCB );
 
   // Initialize Tx Power Level characteristic in Proximity Reporter
   {
@@ -415,6 +433,8 @@ void KeyFobApp_Init( uint8 task_id )
   
   // Setup a delayed profile startup
   osal_start_timerEx( keyfobapp_TaskID, KFD_START_DEVICE_EVT, STARTDELAY );
+  
+  osal_set_event(keyfobapp_TaskID, KEY_COUNTER_EVT);
 }
 
 /*********************************************************************
@@ -464,6 +484,9 @@ uint16 KeyFobApp_ProcessEvent( uint8 task_id, uint16 events )
 
     // Start the Accelerometer Profile
     VOID Accel_RegisterAppCBs( &keyFob_AccelCBs );
+    
+    // Start the key counter Servvice
+    osal_start_timerEx( keyfobapp_TaskID, KEY_COUNTER_EVT, KEY_COUNTER_PERIOD );
 
     //Set the proximity attribute values to default
     ProxReporter_SetParameter( PP_LINK_LOSS_ALERT_LEVEL,  sizeof ( uint8 ), &keyfobProxLLAlertLevel );
@@ -560,6 +583,15 @@ uint16 KeyFobApp_ProcessEvent( uint8 task_id, uint16 events )
 
     return (events ^ KFD_TOGGLE_BUZZER_EVT);
   }
+  
+  if (events & KEY_COUNTER_EVT)
+  {
+    // Perform periodic key counter task
+    
+    keyCounterPeriodicTask();
+    
+    return (events ^ KEY_COUNTER_EVT);
+  }
 
 
 #if defined ( PLUS_BROADCASTER )
@@ -616,6 +648,9 @@ static void keyfobapp_HandleKeys( uint8 shift, uint8 keys )
   {
     SK_Keys |= SK_KEY_LEFT;
     // SK_Keys = 3;
+    
+    KC_SetParameter( SK_KEY_ATTR, sizeof ( uint32 ), &key_counter );
+    
     // if is active, pressing the left key should toggle
     // stop the alert
     if( keyfobAlertState != ALERT_STATE_OFF )
@@ -625,7 +660,7 @@ static void keyfobapp_HandleKeys( uint8 shift, uint8 keys )
 
     // if device is in a connection, toggle the Tx power level between 0 and
     // -6 dBm
-    /*if( gapProfileState == GAPROLE_CONNECTED )
+    if( gapProfileState == GAPROLE_CONNECTED )
     {
       int8 currentTxPowerLevel;
       int8 newTxPowerLevel;
@@ -656,7 +691,7 @@ static void keyfobapp_HandleKeys( uint8 shift, uint8 keys )
         // do nothing
         break;
       }
-    }*/
+    }
 
   }
 
@@ -691,7 +726,13 @@ static void keyfobapp_HandleKeys( uint8 shift, uint8 keys )
   }
 
   SK_SetParameter( SK_KEY_ATTR, sizeof ( uint8 ), &SK_Keys );
+  
 }
+
+
+
+
+
 
 /*********************************************************************
  * @fn      keyfobapp_PerformAlert
@@ -1082,3 +1123,68 @@ static void accelRead( void )
 
 /*********************************************************************
 *********************************************************************/
+
+/*********************************************************************
+ * @fn      keyCounterNotify
+ *
+ * @brief   Prepare and send a heart rate measurement notification
+ *
+ * @return  none
+ */
+static void keyCounterNotify(void)
+{
+  //KeyCounter_MeasNotify( gapConnHandle, &keyCounterMeas );
+  BLENotify();
+}
+
+
+
+/*********************************************************************
+ * @fn      keyCounterPeriodicTask
+ *
+ * @brief   Perform a periodic key counter application task.
+ *
+ * @param   none
+ *
+ * @return  none
+ */
+static void keyCounterPeriodicTask( void )
+{
+  if (gapProfileState == GAPROLE_CONNECTED)
+  {
+    // send key rate measurement notification
+    keyCounterNotify();
+    
+    // Restart timer
+    osal_start_timerEx( keyfobapp_TaskID, KEY_COUNTER_EVT, KEY_COUNTER_PERIOD );
+  }
+}
+
+
+
+/*********************************************************************
+ * @fn      keyCounterCB
+ *
+ * @brief   Callback function for key counter service.
+ *
+ * @param   event - service event
+ *
+ * @return  none
+ */
+static void keyCounterCB(uint8 event)
+{
+  if (event == HEARTRATE_MEAS_NOTI_ENABLED)
+  {
+    // if connected start periodic measurement
+    if (gapProfileState == GAPROLE_CONNECTED)
+    {
+       osal_start_timerEx( keyfobapp_TaskID, KEY_COUNTER_EVT, KEY_COUNTER_PERIOD ); 
+    }
+  }
+
+  else if (event == HEARTRATE_MEAS_NOTI_DISABLED)
+  {
+    // stop periodic measurement
+    osal_stop_timerEx( keyfobapp_TaskID, KEY_COUNTER_EVT );
+  }
+}

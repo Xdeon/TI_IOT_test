@@ -2,18 +2,18 @@
 #                                                                              #
 #      IAR Universal Linker V5.7.0.39                                          #
 #                                                                              #
-#           Link time     =  21/Jun/2014  18:25:48                             #
+#           Link time     =  22/Jun/2014  00:27:24                             #
 #           Target CPU    =  x51                                               #
-#           List file     =  "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\List\SimpleBLEPeripheral.map"            #
-#           Output file 1 =  "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Exe\SimpleBLEPeripheral.hex"             #
+#           List file     =  "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\List\SimpleBLEPeripheral.map"       #
+#           Output file 1 =  "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Exe\SimpleBLEPeripheral.hex"        #
 #                            Format: intel-extended                            #
-#           Output file 2 =  "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Exe\SimpleBLEPeripheral.d51"             #
+#           Output file 2 =  "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Exe\SimpleBLEPeripheral.d51"        #
 #                            Format: debug                                     #
 #                            UBROF version 10.0.6                              #
 #                            Using library modules for C-SPY (-rt)             #
@@ -22,123 +22,123 @@
 #                            -D_NR_OF_BANKS=0x07 -D_CODEBANK_END=0xFFFF        #
 #                            -D_CODEBANK_START=0x8000 -D?CBANK_MASK=0xFF       #
 #                            -D?CBANK=0x9F                                     #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\Libraries\CC2541DB\bin\CC2541_BLE_peri.li #
-#                            b"                                                #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\Libraries\Common\bin\CC254x_BLE_HCI_TL_No #
-#                            ne.lib"                                           #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\OSAL.r51"                            #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\OSAL_ClockBLE.r51"                   #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\OSAL_Memory.r51"                     #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\OSAL_PwrMgr.r51"                     #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\OSAL_SimpleBLEPeripheral.r51"        #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\OSAL_Timers.r51"                     #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\OnBoard.r51"                         #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\SimpleBLEPeripheral_Main.r51"        #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\devinfoservice.r51"                  #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\gap.r51"                             #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\gapbondmgr.r51"                      #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\gatt_uuid.r51"                       #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_adc.r51"                         #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_aes.r51"                         #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_crc.r51"                         #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_dma.r51"                         #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_drivers.r51"                     #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_flash.r51"                       #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_key.r51"                         #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_lcd.r51"                         #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_led.r51"                         #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_sleep.r51"                       #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_startup.r51"                     #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_timer.r51"                       #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\hal_uart.r51"                        #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\npi.r51"                             #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\osal_bufmgr.r51"                     #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\osal_cbtimer.r51"                    #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\osal_snv.r51"                        #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\peripheral.r51"                      #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\simpleBLEPeripheral.r51"             #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\simpleGATTprofile.r51"               #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Obj\simplekeys.r51"                      #
+#                            C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\P #
+#                            rojects\ble\Libraries\CC2541DB\bin\CC2541_BLE_per #
+#                            i.lib                                             #
+#                            C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\P #
+#                            rojects\ble\Libraries\Common\bin\CC254x_BLE_HCI_T #
+#                            L_None.lib                                        #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\OSAL.r51"                       #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\OSAL_ClockBLE.r51"              #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\OSAL_Memory.r51"                #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\OSAL_PwrMgr.r51"                #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\OSAL_SimpleBLEPeripheral.r51"   #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\OSAL_Timers.r51"                #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\OnBoard.r51"                    #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\SimpleBLEPeripheral_Main.r51"   #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\devinfoservice.r51"             #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\gap.r51"                        #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\gapbondmgr.r51"                 #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\gatt_uuid.r51"                  #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_adc.r51"                    #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_aes.r51"                    #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_crc.r51"                    #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_dma.r51"                    #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_drivers.r51"                #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_flash.r51"                  #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_key.r51"                    #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_lcd.r51"                    #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_led.r51"                    #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_sleep.r51"                  #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_startup.r51"                #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_timer.r51"                  #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\hal_uart.r51"                   #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\npi.r51"                        #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\osal_bufmgr.r51"                #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\osal_cbtimer.r51"               #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\osal_snv.r51"                   #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\peripheral.r51"                 #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\simpleBLEPeripheral.r51"        #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\simpleGATTprofile.r51"          #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Obj\simplekeys.r51"                 #
 #                            -o                                                #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\Exe\SimpleBLEPeripheral.d51"             #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\Exe\SimpleBLEPeripheral.d51"        #
 #                            -l                                                #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MIN #
-#                            I Keyfob\List\SimpleBLEPeripheral.map"            #
+#                            "C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\ #
+#                            Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541D #
+#                            K-MINI Keyfob\List\SimpleBLEPeripheral.map"       #
 #                            -xmsn -f                                          #
-#                            "C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Proje #
-#                            cts\ble\SimpleBLEPeripheral\CC2541DB\..\..\common #
-#                            \cc2540\ti_51ew_cc2540b.xcl"                      #
+#                            C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\P #
+#                            rojects\ble\SimpleBLEPeripheral\CC2541DB\..\..\co #
+#                            mmon\cc2540\ti_51ew_cc2540b.xcl                   #
 #                            (-D_IDATA_END=0xFF -D_PDATA_START=0x1E00          #
 #                            -D_PDATA_END=0x1EFF -D_IXDATA_START=0x0001        #
 #                            -D_IXDATA_END=0x1EFF                              #
@@ -256,10 +256,10 @@
 #                            -e?BDISPATCH_FF=?BDISPATCH                        #
 #                            -e_large_write=_formatted_write                   #
 #                            -e_large_read=_formatted_read -rt                 #
-#                            "-Ointel-extended=C:\Users\Heng\Dropbox\TI IOT\Fi #
-#                            rmware\Test\Projects\ble\SimpleBLEPeripheral\CC25 #
-#                            41DB\CC2541DK-MINI Keyfob\Exe\SimpleBLEPeripheral #
-#                            .hex"                                             #
+#                            "-Ointel-extended=C:\Users\Heng\Documents\GitHub\ #
+#                            TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral #
+#                            \CC2541DB\CC2541DK-MINI Keyfob\Exe\SimpleBLEPerip #
+#                            heral.hex"                                        #
 #                            -s __program_start                                #
 #                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
 #                            bench 6.5\8051\LIB\CLIB\cl-pli-blxd-1e16x01.r51"  #
@@ -407,7 +407,7 @@ Absolute parts
            _NR_OF_BANKS            00000007 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\Libraries\CC2541DB\bin\CC2541_BLE_peri.lib
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\Libraries\CC2541DB\bin\CC2541_BLE_peri.lib
   LIBRARY MODULE, NAME : att_server
 
   SEGMENTS IN THE MODULE
@@ -14597,7 +14597,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\Libraries\Common\bin\CC254x_BLE_HCI_TL_None.lib
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\Libraries\Common\bin\CC254x_BLE_HCI_TL_None.lib
   LIBRARY MODULE, NAME : hci_tl
 
   SEGMENTS IN THE MODULE
@@ -14755,7 +14755,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL.r51
   PROGRAM MODULE, NAME : OSAL
 
   SEGMENTS IN THE MODULE
@@ -15557,7 +15557,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_ClockBLE.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_ClockBLE.r51
   PROGRAM MODULE, NAME : OSAL_ClockBLE
 
   SEGMENTS IN THE MODULE
@@ -15618,7 +15618,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_Memory.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_Memory.r51
   PROGRAM MODULE, NAME : OSAL_Memory
 
   SEGMENTS IN THE MODULE
@@ -15757,7 +15757,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_PwrMgr.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_PwrMgr.r51
   PROGRAM MODULE, NAME : OSAL_PwrMgr
 
   SEGMENTS IN THE MODULE
@@ -15854,7 +15854,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_SimpleBLEPeripheral.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_SimpleBLEPeripheral.r51
   PROGRAM MODULE, NAME : OSAL_SimpleBLEPeripheral
 
   SEGMENTS IN THE MODULE
@@ -15912,7 +15912,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_Timers.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OSAL_Timers.r51
   PROGRAM MODULE, NAME : OSAL_Timers
 
   SEGMENTS IN THE MODULE
@@ -16212,7 +16212,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OnBoard.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\OnBoard.r51
   PROGRAM MODULE, NAME : OnBoard
 
   SEGMENTS IN THE MODULE
@@ -16347,7 +16347,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\SimpleBLEPeripheral_Main.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\SimpleBLEPeripheral_Main.r51
   PROGRAM MODULE, NAME : SimpleBLEPeripheral_Main
 
   SEGMENTS IN THE MODULE
@@ -16380,7 +16380,7 @@ SFR_AN
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\devinfoservice.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\devinfoservice.r51
   PROGRAM MODULE, NAME : devinfoservice
 
   SEGMENTS IN THE MODULE
@@ -16838,7 +16838,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\gap.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\gap.r51
   PROGRAM MODULE, NAME : gap
 
   SEGMENTS IN THE MODULE
@@ -16862,7 +16862,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\gapbondmgr.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\gapbondmgr.r51
   PROGRAM MODULE, NAME : gapbondmgr
 
   SEGMENTS IN THE MODULE
@@ -17816,7 +17816,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\gatt_uuid.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\gatt_uuid.r51
   PROGRAM MODULE, NAME : gatt_uuid
 
   SEGMENTS IN THE MODULE
@@ -17985,7 +17985,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_adc.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_adc.r51
   PROGRAM MODULE, NAME : hal_adc
 
   SEGMENTS IN THE MODULE
@@ -18056,7 +18056,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_aes.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_aes.r51
   PROGRAM MODULE, NAME : hal_aes
 
   SEGMENTS IN THE MODULE
@@ -18145,7 +18145,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_crc.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_crc.r51
   PROGRAM MODULE, NAME : hal_crc
 
   SEGMENTS IN THE MODULE
@@ -18166,7 +18166,7 @@ SFR_AN
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_dma.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_dma.r51
   PROGRAM MODULE, NAME : hal_dma
 
   SEGMENTS IN THE MODULE
@@ -18243,7 +18243,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_drivers.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_drivers.r51
   PROGRAM MODULE, NAME : hal_drivers
 
   SEGMENTS IN THE MODULE
@@ -18345,7 +18345,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_flash.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_flash.r51
   PROGRAM MODULE, NAME : hal_flash
 
   SEGMENTS IN THE MODULE
@@ -18417,7 +18417,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_key.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_key.r51
   PROGRAM MODULE, NAME : hal_key
 
   SEGMENTS IN THE MODULE
@@ -18716,10 +18716,10 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_lcd.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_lcd.r51
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_led.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_led.r51
   PROGRAM MODULE, NAME : hal_led
 
   SEGMENTS IN THE MODULE
@@ -18942,7 +18942,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_sleep.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_sleep.r51
   PROGRAM MODULE, NAME : hal_sleep
 
   SEGMENTS IN THE MODULE
@@ -19196,7 +19196,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_startup.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_startup.r51
   PROGRAM MODULE, NAME : hal_startup
 
   SEGMENTS IN THE MODULE
@@ -19210,16 +19210,16 @@ CSTART
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_timer.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_timer.r51
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_uart.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\hal_uart.r51
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\npi.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\npi.r51
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\osal_bufmgr.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\osal_bufmgr.r51
   PROGRAM MODULE, NAME : osal_bufmgr
 
   SEGMENTS IN THE MODULE
@@ -19343,7 +19343,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\osal_cbtimer.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\osal_cbtimer.r51
   PROGRAM MODULE, NAME : osal_cbtimer
 
   SEGMENTS IN THE MODULE
@@ -19464,7 +19464,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\osal_snv.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\osal_snv.r51
   PROGRAM MODULE, NAME : osal_snv
 
   SEGMENTS IN THE MODULE
@@ -19903,7 +19903,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\peripheral.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\peripheral.r51
   PROGRAM MODULE, NAME : peripheral
 
   SEGMENTS IN THE MODULE
@@ -20653,7 +20653,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\simpleBLEPeripheral.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\simpleBLEPeripheral.r51
   PROGRAM MODULE, NAME : simpleBLEPeripheral
 
   SEGMENTS IN THE MODULE
@@ -20878,7 +20878,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\simpleGATTprofile.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\simpleGATTprofile.r51
   PROGRAM MODULE, NAME : simpleGATTprofile
 
   SEGMENTS IN THE MODULE
@@ -21334,7 +21334,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\simplekeys.r51
+  FILE NAME : C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541DK-MINI Keyfob\Obj\simplekeys.r51
   PROGRAM MODULE, NAME : simplekeys
 
   SEGMENTS IN THE MODULE

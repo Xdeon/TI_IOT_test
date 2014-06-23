@@ -1,78 +1,78 @@
-"C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\hal\target\CC2540EB\hal_aes.c"
+"C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\hal\target\CC2540EB\hal_aes.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\hal\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\hal\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\hal\target\CC2540EB
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\hal\target\CC2540EB
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\osal\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\osal\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\services\saddr
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\services\saddr
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\controller\phy
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\controller\phy
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\controller\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\controller\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\hci
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\hci
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\host
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\host
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common\cc2540
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common\cc2540
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common\npi\npi_np
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common\npi\npi_np
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\Roles
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\Roles
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\SimpleProfile
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\SimpleProfile
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\Keys
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\Keys
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\DevInfo
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\DevInfo
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5\8051\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5\8051\inc\clib
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\common
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\common
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\hal\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\hal\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\hal\target\CC2540EB
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\hal\target\CC2540EB
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\osal\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\osal\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\services\saddr
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\services\saddr
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\ble\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\ble\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\ble\controller\phy
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\ble\controller\phy
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\ble\controller\include
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\ble\controller\include
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\ble\hci
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\ble\hci
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Components\ble\host
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Components\ble\host
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\common\cc2540
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\common\cc2540
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\common\npi\npi_np
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\common\npi\npi_np
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\Profiles\Roles
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\Profiles\Roles
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\Profiles\SimpleProfile
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\Profiles\SimpleProfile
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\Profiles\Keys
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\Profiles\Keys
 -I
-C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\Profiles\DevInfo
+C:\Users\Heng\Documents\GitHub\TI_IOT_test\Test\Projects\ble\Profiles\DevInfo
 -DINT_HEAP_LEN=3072
 -DHALNODEBUG=0
 -DOSAL_CBTIMER_NUM_TASKS=1
@@ -377,8 +377,8 @@ C:\Users\Heng\Dropbox\TI IOT\Firmware\Test\Projects\ble\Profiles\DevInfo
 -D__PLAIN_INT_BITFIELD_IS_SIGNED__=1
 -D__HAS_LOCATED_DECLARATION__=1
 -D__IAR_COMPILERBASE__=593409
--D__DATE__="Jun 21 2014"
--D__TIME__="18:06:01"
+-D__DATE__="Jun 22 2014"
+-D__TIME__="00:27:26"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1

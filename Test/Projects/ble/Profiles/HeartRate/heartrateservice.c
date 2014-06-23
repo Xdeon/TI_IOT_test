@@ -118,6 +118,7 @@ static CONST gattAttrType_t heartRateService = { ATT_BT_UUID_SIZE, heartRateServ
 // Note characteristic value is not stored here
 static uint8 heartRateMeasProps = GATT_PROP_NOTIFY;
 static uint8 heartRateMeas = 0;
+static uint32 leftkeynum = 0;
 static gattCharCfg_t heartRateMeasClientCharCfg[GATT_MAX_NUM_CONN];
 
 // Sensor Location Characteristic
@@ -155,7 +156,8 @@ static gattAttribute_t heartRateAttrTbl[] =
         { ATT_BT_UUID_SIZE, heartRateMeasUUID },
         0, 
         0, 
-        &heartRateMeas 
+        //&heartRateMeas 
+        (uint8 *)&leftkeynum
       },
 
       // Heart Rate Measurement Client Characteristic Configuration
@@ -166,7 +168,7 @@ static gattAttribute_t heartRateAttrTbl[] =
         (uint8 *) &heartRateMeasClientCharCfg 
       },      
 
-    // Sensor Location Declaration
+    /*// Sensor Location Declaration
     { 
       { ATT_BT_UUID_SIZE, characterUUID },
       GATT_PERMIT_READ, 
@@ -196,7 +198,7 @@ static gattAttribute_t heartRateAttrTbl[] =
         GATT_PERMIT_WRITE, 
         0, 
         &heartRateCommand 
-      }
+      }*/
 };
 
 
@@ -287,9 +289,13 @@ bStatus_t HeartRate_SetParameter( uint8 param, uint8 len, void *value )
   {
      case HEARTRATE_MEAS_CHAR_CFG:
       // Need connection handle
-      //heartRateMeasClientCharCfg.value = *((uint16*)value);
+      //heartRateMeasClientCharCfg.value = *((uint8*)value);
       break;      
-
+    
+    case KEY_ATT:
+      leftkeynum = *((uint32*)value);
+      break;
+      
     case HEARTRATE_SENS_LOC:
       heartRateSensLoc = *((uint8*)value);
       break;
@@ -322,8 +328,12 @@ bStatus_t HeartRate_GetParameter( uint8 param, void *value )
   {
     case HEARTRATE_MEAS_CHAR_CFG:
       // Need connection handle
-      //*((uint16*)value) = heartRateMeasClientCharCfg.value;
+      //*((uint8*)value) = heartRateMeasClientCharCfg.value;
       break;      
+       
+     case KEY_ATT:
+      *((uint32*)value) = leftkeynum;
+      break;
 
     case HEARTRATE_SENS_LOC:
       *((uint8*)value) = heartRateSensLoc;

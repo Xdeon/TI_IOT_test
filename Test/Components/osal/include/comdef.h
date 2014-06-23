@@ -130,6 +130,8 @@ typedef uint32  uint24;
 // OSAL System Message IDs/Events Reserved for applications (user applications)
 // 0xE0 – 0xFC
 
+
+
 /*********************************************************************
  * MACROS
  */

@@ -461,6 +461,9 @@ static void heartRate_HandleKeys( uint8 shift, uint8 keys )
     {
       heartRateFlagsIdx = 0;
     }
+    
+    HeartRate_SetParameter( KEY_ATT, sizeof (uint32), &key_counter );
+    //KC_SetParameter( SK_KEY_ATTR, sizeof ( uint32 ), &key_counter );
   }
   
   if ( keys & HAL_KEY_SW_2 )
@@ -498,7 +501,7 @@ static void heartRate_HandleKeys( uint8 shift, uint8 keys )
  */
 static void heartRateMeasNotify(void)
 {
-  uint8 *p = heartRateMeas.value;
+  /*uint8 *p = heartRateMeas.value;
   uint8 flags = heartRateFlags[heartRateFlagsIdx];
   
   // build heart rate measurement structure from simulated values
@@ -521,16 +524,16 @@ static void heartRateMeasNotify(void)
     *p++ = LO_UINT16(heartRateRrInterval2);
     *p++ = HI_UINT16(heartRateRrInterval2);  
   }
-  heartRateMeas.len = (uint8) (p - heartRateMeas.value);
+  heartRateMeas.len = (uint8) (p - heartRateMeas.value);*/
   HeartRate_MeasNotify( gapConnHandle, &heartRateMeas );
   
-  // update simulated values 
+  /*// update simulated values 
   heartRateEnergy += ENERGY_INCREMENT;
   if (++heartRateBpm == BPM_MAX)
   {
     heartRateBpm = BPM_DEFAULT;
   }
-  heartRateRrInterval1 = heartRateRrInterval2 = HEARTRATE_BPM_TO_RR(heartRateBpm);
+  heartRateRrInterval1 = heartRateRrInterval2 = HEARTRATE_BPM_TO_RR(heartRateBpm);*/
 }
 
 /*********************************************************************

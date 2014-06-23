@@ -59,6 +59,7 @@ extern "C"
 #define HEARTRATE_MEAS_CHAR_CFG             1
 #define HEARTRATE_SENS_LOC                  2
 #define HEARTRATE_COMMAND                   3
+#define KEY_ATT                             4
 
 // Maximum length of heart rate measurement characteristic
 #define HEARTRATE_MEAS_MAX                  (ATT_MTU_SIZE -5)

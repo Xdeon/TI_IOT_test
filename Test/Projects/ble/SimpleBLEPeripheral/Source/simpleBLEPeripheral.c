@@ -83,6 +83,10 @@
  * CONSTANTS
  */
 
+// How oftern to perform key counter event
+#define DEFAULT_KEYCOUNTER_PERIOD                 1000
+
+
 // How often to perform periodic event
 #define SBP_PERIODIC_EVT_PERIOD                   5000
 
@@ -208,7 +212,7 @@ static uint8 advertData[] =
 };
 
 // GAP GATT Attributes
-static uint8 attDeviceName[GAP_DEVICE_NAME_LEN] = "Simple BLE Peripheral";
+static uint8 attDeviceName[GAP_DEVICE_NAME_LEN] = "Simple Key Counter";
 
 /*********************************************************************
  * LOCAL FUNCTIONS
